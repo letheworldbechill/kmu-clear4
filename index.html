@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLEAR-4 KMU Framework – Ruhige Webseiten für Betriebe in der Schweiz</title>
+  <meta name="description" content="Ruhige, klare und barrierearme Webseiten für Schweizer KMU. Lesbar für Ältere, verständlich für Familien, mehrsprachig für die Region." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATION / TOOLS -->
+  <header class="top" role="banner">
+    <div class="shell top-inner">
+      <div class="brand">
+        <div class="brand-title" data-i18n="brand_name">Ihr Betrieb</div>
+        <div class="brand-sub" data-i18n="brand_tagline">Solide Arbeit. Klarer Auftritt.</div>
+      </div>
+
+      <div class="nav-wrapper">
+        <button class="nav-toggle" type="button" aria-label="Menü öffnen">☰</button>
+
+        <nav class="nav-main" aria-label="Hauptnavigation">
+          <button class="nav-item current" data-target="#start" type="button" data-i18n="nav_start">Start</button>
+          <button class="nav-item" data-target="#leistungen" type="button" data-i18n="nav_services">Leistungen</button>
+          <button class="nav-item" data-target="#ueber-uns" type="button" data-i18n="nav_about">Über uns</button>
+          <button class="nav-item" data-target="#kontakt" type="button" data-i18n="nav_contact">Kontakt</button>
+        </nav>
+
+        <div class="tools" aria-label="Sprach- und Barrierefreiheits-Einstellungen">
+          <div class="lang-switch" role="group" aria-label="Sprache wählen">
+            <button type="button" data-lang="de" aria-pressed="true">DE</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
+          <div class="accessibility-tools" role="group" aria-label="Ansicht und Audio">
+            <button type="button" data-action="zoom-out" aria-label="Ansicht verkleinern">A−</button>
+            <button type="button" data-action="zoom-in" aria-label="Ansicht vergrößern">A+</button>
+            <button type="button" data-action="zoom-reset" aria-label="Ansicht zurücksetzen">A</button>
+            <button type="button" data-action="zoom-element" aria-pressed="false" aria-label="Einzelelement-Vergrößerung umschalten">🔍</button>
+            <button type="button" data-action="read" aria-label="Aktuellen Bereich vorlesen">🔊</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page shell" aria-label="Seiteninhalt">
+    <!-- HERO -->
+    <section id="start" class="hero zoomable" data-zoomable="true" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-label" data-i18n="hero_label">CLEAR-4 · KMU</div>
+        <h1 id="hero-title" data-i18n="hero_title">
+          Ruhige, klare Webseiten für Betriebe in Ihrer Region.
+        </h1>
+        <p data-i18n="hero_text">
+          Dieses Layout ist für Schweizer KMU gedacht: gut lesbar für ältere Menschen, verständlich für Familien
+          und einfach im Alltag nutzbar. Ohne Schnickschnack – dafür mit klaren Wegen zu Telefon, Kontakt und Anfahrt.
+        </p>
+        <p class="hero-meta" data-i18n="hero_meta">
+          Optimiert für Bildschirmlesbarkeit, Screenreader, Zoom und mehrere Sprachen (DE · EN · FR).
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" data-target="#kontakt-anfrage" data-i18n="hero_cta_primary">
+            Rückruf anfordern
+          </button>
+          <button class="btn btn-ghost" type="button" data-target="#leistungen" data-i18n="hero_cta_secondary">
+            Leistungen ansehen
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section id="leistungen" class="section" aria-labelledby="leistungen-title">
+      <header class="section-header">
+        <div class="section-label" data-i18n="services_label">Angebot</div>
+        <h2 id="leistungen-title" class="section-title" data-i18n="services_title">Leistungen & Produkte</h2>
+      </header>
+      <div class="section-grid cols-3">
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="service_a_title">Leistung A · Kernangebot</h3>
+          <p data-i18n="service_a_text">
+            In einfachen Worten erklärt: Was bieten Sie an, für wen ist es gedacht und welches Problem lösen Sie damit?
+            Keine Fachsprache, sondern Alltagssprache.
+          </p>
+        </article>
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="service_b_title">Leistung B · Ergänzung</h3>
+          <p data-i18n="service_b_text">
+            Eine typische Zusatzleistung – zum Beispiel Wartung, Service oder eine wiederkehrende Betreuung.
+          </p>
+        </article>
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="service_c_title">Leistung C · Spezialangebot</h3>
+          <p data-i18n="service_c_text">
+            Hier kann ein spezieller Bereich oder eine Nische beschrieben werden, die Sie von anderen Betrieben unterscheidet.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ÜBER UNS -->
+    <section id="ueber-uns" class="section" aria-labelledby="ueber-title">
+      <header class="section-header">
+        <div class="section-label" data-i18n="about_label">Unternehmen</div>
+        <h2 id="ueber-title" class="section-title" data-i18n="about_title">Über uns</h2>
+      </header>
+      <div class="section-grid cols-2">
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="about_who_title">Wer wir sind</h3>
+          <p data-i18n="about_who_text">
+            Ein kurzer Überblick: Gründungsjahr, Region, Teamgrösse und was Sie im Alltag antreibt. Seriös, bodenständig
+            und persönlich – so wie Ihr Betrieb.
+          </p>
+        </article>
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="about_values_title">Was uns wichtig ist</h3>
+          <p data-i18n="about_values_text">
+            Stichworte wie Qualität, Zuverlässigkeit, faire Zusammenarbeit, Lehrlingsausbildung oder Nachhaltigkeit
+            können hier in ruhigen Sätzen erklärt werden.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAMILIEN / KINDER – optional -->
+    <section id="familien" class="section section-family" aria-labelledby="familien-title">
+      <header class="section-header">
+        <div class="section-label" data-i18n="family_label">Für Familien</div>
+        <h2 id="familien-title" class="section-title" data-i18n="family_title">
+          Für Familien und kleine Baustellenfans
+        </h2>
+      </header>
+      <div class="section-grid cols-2">
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="family_info_title">Kinder willkommen</h3>
+          <p data-i18n="family_info_text">
+            Viele unserer Kundinnen und Kunden kommen mit der ganzen Familie vorbei. Wir achten darauf,
+            dass Wege sicher sind und erklären Kindern gern, was auf der Baustelle passiert.
+          </p>
+        </article>
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="family_play_title">Kleine Entdeckerseite</h3>
+          <p data-i18n="family_play_text">
+            Optional können wir hier ein kleines, seitenspezifisches Spiel einbauen – zum Beispiel einen Bagger,
+            den Kinder mit der Maus oder dem Finger bewegen können.
+          </p>
+          <!-- <p style="margin-top:var(--s12);">
+            <a href="bagger.html" class="btn btn-ghost">Bagger ausprobieren</a>
+          </p> -->
+        </article>
+      </div>
+    </section>
+
+    <!-- KONTAKT – alles in einem Block wie dein Baum -->
+    <section id="kontakt" class="section" aria-labelledby="kontakt-title">
+      <header class="section-header">
+        <div class="section-label" data-i18n="contact_label">Kontakt</div>
+        <h2 id="kontakt-title" class="section-title" data-i18n="contact_title">So erreichen Sie uns</h2>
+      </header>
+
+      <!-- Obere Reihe: Adresse / Öffnungszeiten -->
+      <div class="section-grid cols-2 contact-top">
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="contact_address_title">Adresse & Kontakt</h3>
+          <ul class="info-list">
+            <li>
+              <div class="info-label" data-i18n="contact_address_label">Adresse</div>
+              <div class="info-value">Musterstrasse 1<br>2500 Musterort</div>
+            </li>
+            <li>
+              <div class="info-label" data-i18n="contact_phone_label">Telefon</div>
+              <div class="info-value"><a href="tel:+41000000000">+41 00 000 00 00</a></div>
+            </li>
+            <li>
+              <div class="info-label">E-Mail</div>
+              <div class="info-value"><a href="mailto:info@ihr-betrieb.ch">info@ihr-betrieb.ch</a></div>
+            </li>
+          </ul>
+        </article>
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="contact_hours_title">Öffnungszeiten</h3>
+          <ul class="info-list">
+            <li><div class="info-value" data-i18n="contact_hours_week">Mo–Fr · 07:30–12:00 / 13:30–17:00</div></li>
+            <li><div class="info-value" data-i18n="contact_hours_sat">Sa nach Vereinbarung</div></li>
+          </ul>
+          <p style="margin-top:var(--s16);font-size:14px;color:var(--text-muted);" data-i18n="contact_hint">
+            Kurzinfo, z.B. Zufahrt, Besucherparkplätze oder Anlieferung. Auf Wunsch kann hier auch ein Link zum Lageplan stehen.
+          </p>
+        </article>
+      </div>
+
+      <!-- Untere Reihe: Rückruf + Vollformular -->
+      <div class="section-grid cols-2 contact-bottom" id="kontakt-anfrage">
+        <!-- Rückruf -->
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="callback_form_title">Rückruf anfordern</h3>
+          <p style="font-size:14px;color:var(--text-soft);margin-bottom:var(--s12);" data-i18n="callback_intro">
+            Wenn Sie uns nur kurz Ihre Nummer hinterlassen möchten, rufen wir Sie zurück.
+          </p>
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="hidden" name="form_type" value="callback">
+            <input type="text"
+                   name="name"
+                   placeholder="Ihr Name"
+                   required
+                   aria-label="Name"
+                   data-i18n-placeholder="form_name_placeholder">
+            <input type="tel"
+                   name="phone"
+                   placeholder="Ihre Telefonnummer"
+                   required
+                   aria-label="Telefon"
+                   data-i18n-placeholder="form_phone_placeholder">
+            <select name="time"
+                    aria-label="Bevorzugte Zeit">
+              <option value="" disabled selected data-i18n="callback_time_placeholder">
+                Wann dürfen wir Sie anrufen?
+              </option>
+              <option value="morning" data-i18n="callback_time_morning">Vormittags</option>
+              <option value="afternoon" data-i18n="callback_time_afternoon">Nachmittags</option>
+              <option value="evening" data-i18n="callback_time_evening">Abends</option>
+            </select>
+            <textarea name="note"
+                      rows="3"
+                      aria-label="Hinweis (optional)"
+                      placeholder="Kurze Notiz (optional)"></textarea>
+            <button type="submit" class="btn form-btn" data-i18n="form_submit_callback">Rückruf anfordern</button>
+          </form>
+        </article>
+
+        <!-- Vollformular -->
+        <article class="card zoomable" data-zoomable="true">
+          <h3 data-i18n="detail_form_title">Anfrage mit Details senden</h3>
+          <p style="font-size:14px;color:var(--text-soft);margin-bottom:var(--s12);" data-i18n="detail_intro">
+            Wenn Sie Ihr Anliegen genauer beschreiben, kann sich direkt die passende Person bei Ihnen melden.
+          </p>
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="hidden" name="form_type" value="detailed">
+            <input type="text"
+                   name="name"
+                   placeholder="Ihr Name"
+                   required
+                   aria-label="Name"
+                   data-i18n-placeholder="form_name_placeholder">
+            <input type="email"
+                   name="email"
+                   placeholder="Ihre E-Mail"
+                   required
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                   aria-label="E-Mail"
+                   data-i18n-placeholder="form_email_placeholder">
+            <input type="tel"
+                   name="phone"
+                   placeholder="Ihre Telefonnummer (optional)"
+                   aria-label="Telefon (optional)"
+                   data-i18n-placeholder="form_phone_optional_placeholder">
+            <select name="topic"
+                    aria-label="Worum geht es?">
+              <option value="" disabled selected data-i18n="detail_topic_placeholder">
+                Worum geht es?
+              </option>
+              <option value="quote" data-i18n="detail_topic_quote">Offerte / Kostenvoranschlag</option>
+              <option value="repair" data-i18n="detail_topic_repair">Reparatur / Service</option>
+              <option value="consulting" data-i18n="detail_topic_consulting">Beratung / Projektanfrage</option>
+              <option value="other" data-i18n="detail_topic_other">Anderes Anliegen</option>
+            </select>
+            <textarea name="message"
+                      rows="4"
+                      required
+                      aria-label="Nachricht"
+                      data-i18n-placeholder="form_message_placeholder"
+                      placeholder="Ihre Nachricht"></textarea>
+            <button type="submit" class="btn form-btn" data-i18n="form_submit_detailed">Anfrage senden</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div>© <span id="year"></span> <span data-i18n="brand_name_footer">Ihr Betrieb</span></div>
+      <nav class="footer-nav" aria-label="Footer-Navigation">
+        <a href="#start" data-i18n="nav_start">Start</a>
+        <a href="#leistungen" data-i18n="nav_services">Leistungen</a>
+        <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
